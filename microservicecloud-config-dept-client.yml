@@ -1,0 +1,149 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8001
+spring:
+  application:
+    name: microservicecloud-config-dept-client
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.111.125.198:3306/cloudDB1?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: AttackingApe_1
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.Attacking.demo.Entities
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: dept-8001.com
+    prefer-ip-address: true
+
+info:
+  app.name: Attacking-microservicecloud
+  company.name: https://blog.csdn.net/Attacking_Ape
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+---
+server:
+  port: 8002
+spring:
+  application:
+    name: microservicecloud-config-dept-client
+  profiles: test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.111.125.198:3306/cloudDB2?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: AttackingApe_1
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.Attacking.demo.Entities
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: dept-8002.com
+    prefer-ip-address: true
+
+info:
+  app.name: Attacking-microservicecloud
+  company.name: https://blog.csdn.net/Attacking_Ape
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+---
+server:
+  port: 8003
+spring:
+  application:
+    name: microservicecloud-config-dept-client
+  profiles: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.111.125.198:3306/cloudDB3?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: AttackingApe_1
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.Attacking.demo.Entities
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: dept-8003.com
+    prefer-ip-address: true
+
+info:
+  app.name: Attacking-microservicecloud
+  company.name: https://blog.csdn.net/Attacking_Ape
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+---
+server:
+  port: 8004
+spring:
+  application:
+    name: microservicecloud-config-dept-client
+  profiles: release
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.111.125.198:3306/cloudDB1?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: AttackingApe_1
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.Attacking.demo.Entities
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: dept-8004.com
+    prefer-ip-address: true
+
+info:
+  app.name: Attacking-microservicecloud
+  company.name: https://blog.csdn.net/Attacking_Ape
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+---
+server:
+  port: 8005
+spring:
+  application:
+    name: microservicecloud-config-dept-client
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.111.125.198:3306/cloudDB2?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: AttackingApe_1
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.Attacking.demo.Entities
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: dept-8005.com
+    prefer-ip-address: true
+
+info:
+  app.name: Attacking-microservicecloud
+  company.name: https://blog.csdn.net/Attacking_Ape
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
