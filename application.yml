@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-attacking-dev
+---
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-attacking-test
+---
+spring:
+  profiles: prod
+  application:
+    name: microservicecloud-config-attacking-prod
+---
+spring:
+  profiles: beta
+  application:
+    name: microservicecloud-config-attacking-beta
+---
+spring:
+  profiles: release
+  application:
+    name: microservicecloud-config-attacking-release
